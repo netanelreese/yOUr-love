@@ -5,7 +5,8 @@ import mysql.connector
 user_db = mysql.connector.connect(
   host="34.122.13.220",
   user="root",
-  password="Violentwinds212!"
+  password="Violentwinds212!",
+  database="your_love"
 )
 
 print(user_db)
@@ -62,7 +63,7 @@ def num_same_answers(answers1, answers2):
         i += 1
     return num_same / 20.0
 
-phone_num = get_phone_number()
+#phone_num = get_phone_number()
 
 def complete():
     message = client.messages.create(
@@ -88,3 +89,4 @@ def send_matches(text):
     )
     print(message.sid)
 
+get_table()
