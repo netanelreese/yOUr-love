@@ -17,11 +17,17 @@ auth_token = tokendic.get("key")
 
 client = Client(account_sid, auth_token)
 
+cursorObject = user_db.cursor()
 # returns a persons answers (array of answers)
-def get_answers(name):
-    return ""
+def get_table():
+    query = "SELECT * FROM user_data"
+    cursorObject.execute(query)
+    result = cursorObject.fetchall()
+    for x in result:
+        print(x)
+    return result
 # returns the persons phone number
-def get_phone_number():
+def get_phone_number(name):
     return ""
 
 # return the persons instagram handle
