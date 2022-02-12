@@ -59,13 +59,16 @@ def complete():
 
 # returns the text to be sent in matches()
 def matches_text(matches):
-    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + matches[0][1] + '%, Instagram: ' + matches[0][2]
+    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + matches[0][1] + '%, Instagram: ' + \
+           matches[0][2] + '\n2. ' + matches[1][0] + ', Similairity: ' + matches[1][1] + '%, Instagram: ' + \
+           matches[1][2] + '\n3. ' + matches[2][0] + ', Similairity: ' + matches[2][1] + '%, Instagram: ' + \
+           matches[2][2]
 
 # texts the person their matches
-def send_matches():
+def send_matches(text):
     message = client.messages.create(
         messaging_service_sid='MGc8bc55077da9aebfdc146d03c77e3aa2',
-        body='You matched with',
+        body=text,
         to='+18177579731'
     )
     print(message.sid)
