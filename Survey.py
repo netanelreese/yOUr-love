@@ -45,7 +45,7 @@ def num_same_answers(answers1, answers2):
         if (answer1 == answer2):
             num_same += 1
         i += 1
-    return num_same
+    return num_same / 20.0
 
 phone_num = get_phone_number()
 
