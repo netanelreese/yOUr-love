@@ -59,9 +59,9 @@ def complete():
 
 # returns the text to be sent in matches()
 def matches_text(matches):
-    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + matches[0][1] + '%, Instagram: ' + \
-           matches[0][2] + '\n2. ' + matches[1][0] + ', Similairity: ' + matches[1][1] + '%, Instagram: ' + \
-           matches[1][2] + '\n3. ' + matches[2][0] + ', Similairity: ' + matches[2][1] + '%, Instagram: ' + \
+    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + str(matches[0][1]) + '%, Instagram: ' + \
+           matches[0][2] + '\n2. ' + matches[1][0] + ', Similairity: ' + str(matches[1][1]) + '%, Instagram: ' + \
+           matches[1][2] + '\n3. ' + matches[2][0] + ', Similairity: ' + str(matches[2][1]) + '%, Instagram: ' + \
            matches[2][2]
 
 # texts the person their matches
