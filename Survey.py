@@ -8,6 +8,9 @@ auth_token = tokendick.get("key")
 
 client = Client(account_sid, auth_token)
 
+# returns a persons answers
+def get_answers():
+    return ""
 # returns the persons phone number
 def get_phone_number():
     return ""
