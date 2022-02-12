@@ -9,7 +9,7 @@ auth_token = tokendick.get("key")
 client = Client(account_sid, auth_token)
 
 # returns a persons answers (array of answers)
-def get_answers():
+def get_answers(name):
     return ""
 # returns the persons phone number
 def get_phone_number():
@@ -20,8 +20,21 @@ def get_person():
     return ""
 
 # returns the persons top 3 matches
+def sort(matches):
+    pass
+
+# TODO
+#
 def get_matches():
-    return ""
+    matches = [['Blank', 0, 'insta'], ['Blank', 0, 'insta'], ['Blank', 0, 'insta']]  # Name, Percent
+    for person in persons:
+        answers1 = get_answers(name1)
+        answers2 = get_answers(name2)
+        num_same = num_same_answers(answers1, answers2)
+        if num_same > matches[2][1]:
+            matches[3] = [person, num_same, 'insta']
+            sort(matches)
+    return matches
 
 # returns the number of same answers to 20 questions
 def num_same_answers(answers1, answers2):
@@ -45,8 +58,8 @@ def complete():
     print(message.sid)
 
 # returns the text to be sent in matches()
-def matches_text():
-    return ""
+def matches_text(matches):
+    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + matches[0][1] + '%, Instagram: ' + matches[0][2]
 
 # texts the person their matches
 def send_matches():
