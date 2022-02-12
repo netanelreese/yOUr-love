@@ -12,6 +12,9 @@ client = Client(account_sid, auth_token)
 def get_phone_number():
     return ""
 
+def get_person():
+    return ""
+
 phone_num = get_phone_number()
 
 def complete():
@@ -22,6 +25,13 @@ def complete():
     )
     print(message.sid)
 
+def matches():
+    message = client.messages.create(
+        messaging_service_sid='MGc8bc55077da9aebfdc146d03c77e3aa2',
+        body='You matched with',
+        to='+18177579731'
+    )
+    print(message.sid)
 
 def main():
     complete()
