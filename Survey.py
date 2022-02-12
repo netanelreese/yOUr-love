@@ -1,8 +1,15 @@
 from twilio.rest import Client
+import toml
+
 
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
-auth_token = '452601eb846cb9f9d749c4f391462efe'
+auth_token =
 client = Client(account_sid, auth_token)
+
+
+def get_phone_number():
+    return ""
+
 phone_num = get_phone_number()
 
 def complete():
@@ -11,5 +18,6 @@ def complete():
         body='Thank you for completing our survey! You will get your results shortly :)',
         to=phone_num
     )
-    
     print(message.sid)
+
+
