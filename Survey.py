@@ -1,9 +1,18 @@
 from twilio.rest import Client
 import toml
+import mysql.connector
+
+user_db = mysql.connector.connect(
+  host="34.122.13.220",
+  user="root",
+  password="Violentwinds212!"
+)
+
+print(user_db)
 
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
 config = toml.load("config.toml")
-tokendick = config.get("Twillio")
+tokendic = config.get("Twillio")
 auth_token = tokendick.get("key")
 
 client = Client(account_sid, auth_token)
