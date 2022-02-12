@@ -26,10 +26,12 @@ def get_matches():
 # returns the number of same answers to 20 questions
 def num_same_answers(answers1, answers2):
     num_same = 0
+    i = 0
     for answer1 in answers1:
-        for answer2 in answers2:
-            if (answer1 == answer2):
-                num_same += 1
+        answer2 = answers2[i]
+        if (answer1 == answer2):
+            num_same += 1
+        i += 1
     return num_same
 
 phone_num = get_phone_number()
