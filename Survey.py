@@ -25,14 +25,14 @@ def sort(matches):
 
 # TODO
 #
-def get_matches():
+def get_matches(name1):
     matches = [['Blank', 0, 'insta'], ['Blank', 0, 'insta'], ['Blank', 0, 'insta']]  # Name, Percent
-    for person in persons:
+    for name2 in persons:
         answers1 = get_answers(name1)
         answers2 = get_answers(name2)
         num_same = num_same_answers(answers1, answers2)
         if num_same > matches[2][1]:
-            matches[3] = [person, num_same, 'insta']
+            matches[3] = [name2, num_same, 'insta']
             sort(matches)
     return matches
 
@@ -57,10 +57,10 @@ def complete():
     )
     print(message.sid)
 
-# returns the text to be sent in matches()
+# returns the text to be sent in send_matches(text)
 def matches_text(matches):
-    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + str(matches[0][1]) + '%, Instagram: ' + \
-           matches[0][2] + '\n2. ' + matches[1][0] + ', Similairity: ' + str(matches[1][1]) + '%, Instagram: ' + \
+    return 'Your top 3 matches are:\n1. ' + matches[0][0] + ', Similairity: ' + str(matches[0][1]) + '%, Instagram: ' \
+           + matches[0][2] + '\n2. ' + matches[1][0] + ', Similairity: ' + str(matches[1][1]) + '%, Instagram: ' + \
            matches[1][2] + '\n3. ' + matches[2][0] + ', Similairity: ' + str(matches[2][1]) + '%, Instagram: ' + \
            matches[2][2]
 
