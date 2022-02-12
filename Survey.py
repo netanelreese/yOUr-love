@@ -15,8 +15,8 @@ def get_answers(name):
 def get_phone_number():
     return ""
 
-# return the persons name and instagram handle
-def get_person():
+# return the persons instagram handle
+def get_insta():
     return ""
 
 # returns the persons top 3 matches
@@ -32,11 +32,11 @@ def get_matches(name1):
         answers2 = get_answers(name2)
         num_same = num_same_answers(answers1, answers2)
         if num_same > matches[2][1]:
-            matches[3] = [name2, num_same, 'insta']
+            matches[3] = [name2, num_same, get_insta()]
             sort(matches)
     return matches
 
-# returns the number of same answers to 20 questions
+# returns the percent of number of same answers to 20 questions
 def num_same_answers(answers1, answers2):
     num_same = 0
     i = 0
