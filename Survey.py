@@ -8,7 +8,7 @@ auth_token = tokendick.get("key")
 
 client = Client(account_sid, auth_token)
 
-# returns a persons answers
+# returns a persons answers (array of answers)
 def get_answers():
     return ""
 # returns the persons phone number
@@ -24,8 +24,13 @@ def get_matches():
     return ""
 
 # returns the number of same answers to 20 questions
-def num_same_answers():
-    return ""
+def num_same_answers(answers1, answers2):
+    num_same = 0
+    for answer1 in answers1:
+        for answer2 in answers2:
+            if (answer1 == answer2):
+                num_same += 1
+    return num_same
 
 phone_num = get_phone_number()
 
