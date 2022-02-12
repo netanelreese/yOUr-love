@@ -14,7 +14,6 @@
 
 from flask import Flask, render_template, request
 import google.auth
-from google.cloud import translate
 
 app = Flask(__name__)
 _, PROJECT_ID = google.auth.default()
@@ -50,13 +49,10 @@ def translate(gcf_request=None):
                 rsp = TRANSLATE.translate_text(request=data)
             except TypeError:
                 rsp = TRANSLATE.translate_text(**data)
-            translated = rsp.translations[0].translated_text
+
 
     # create context & render template
-    context = {
-        'orig':  {'text': text, 'lc': SOURCE},
-        'trans': {'text': translated, 'lc': TARGET},
-    }
+
     return render_template('index.html', **context)
 
 
