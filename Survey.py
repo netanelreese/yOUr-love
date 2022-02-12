@@ -13,7 +13,7 @@ print(user_db)
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
 config = toml.load("config.toml")
 tokendic = config.get("Twillio")
-auth_token = tokendick.get("key")
+auth_token = tokendic.get("key")
 
 client = Client(account_sid, auth_token)
 
