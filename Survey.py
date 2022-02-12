@@ -38,7 +38,8 @@ def complete():
 def matches_text():
     return ""
 
-def matches():
+# texts the person their matches
+def send_matches():
     message = client.messages.create(
         messaging_service_sid='MGc8bc55077da9aebfdc146d03c77e3aa2',
         body='You matched with',
