@@ -71,6 +71,7 @@ def get_matches():
         #send_matches(matches_text(matches), get_phone_number(user1))
         print(matches_text(matches))
         print(get_phone_number(user1))
+        print(get_name(user1))
 
 # returns the percent of number of same answers to 20 questions
 def num_same_answers(answers1, answers2):
