@@ -106,7 +106,7 @@
       font-size: 15px;
       overflow-wrap: normal;
       word-break: normal;
-      font-weight: 
+      font-weight: 33px;
       }
       .sentiment {
       color: #3b3b3b;
@@ -403,6 +403,7 @@
         </div>
         <script>
         function checkButton() {
+                var inp = '';
                 var name = document.getElementById("name").value;
                 var phone = document.getElementById("phone").value;
                 var ig = document.getElementById("ig").value;
@@ -426,7 +427,7 @@
 
 
                 if(one != null && two != null && three != null && four != null && five != null && six != null) {
-                    var inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
+                    inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
 
                 console.log(inp);
 
@@ -439,8 +440,6 @@
                 window.location.href="thankyou.html?section2="+sect2;
             }
         </script>
-
-Message #general
         
         
         </form>
