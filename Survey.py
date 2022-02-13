@@ -65,7 +65,7 @@ def get_matches():
             if user1 != user2:
                 num_same = num_same_answers(user1, user2)
                 if num_same > matches[2][1]:
-                    matches[3] = [get_name(user2), num_same, get_insta(user2)]
+                    matches[2] = [get_name(user2), num_same, get_insta(user2)]
                     sort(matches)
         send_matches(matches_text(matches), get_phone_number(user1))
 
@@ -106,3 +106,4 @@ def send_matches(text, phone_number):
     )
     print(message.sid)
 
+get_matches()
