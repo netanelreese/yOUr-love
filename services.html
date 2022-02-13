@@ -108,6 +108,10 @@
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 15px;
       overflow-wrap: normal;
+<<<<<<< HEAD
+=======
+      word-break: normal;
+>>>>>>> b2d4730a57cab243b676e0a32ec46e12ee0c72c1
       font-weight: 33px;
       }
       .sentiment {
@@ -254,6 +258,7 @@
             <td><input type="radio" value=4 name="extrovert" /></td>
             <td><input type="radio" value=5 name="extrovert" /></td>
           </tr>
+<!--
           <tr>
             <td class="first-col">Spends free time going out</td>
             <td><input type="radio" value=1 name="out" /></td>
@@ -398,13 +403,15 @@
             <td><input type="radio" value=4 name="fear" /></td>
             <td><input type="radio" value=5 name="fear" /></td>
           </tr>
+-->
         </table>
         <div class="btn-block">
-          <button type="submit" href="/">Send Feedback</button>
+          <button type="submit" onclick="checkButton" href="thankyou.html">Send Feedback</button>
         </div>
         <script>
             
         function checkButton() {
+                var inp = '';
                 var name = document.getElementById("name").value;
                 var phone = document.getElementById("phone").value;
                 var ig = document.getElementById("ig").value;
@@ -428,21 +435,28 @@
 
 
                 if(one != null && two != null && three != null && four != null && five != null && six != null) {
-                    var inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
-
-                console.log(inp);
-
-
+                    inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
                 }
+                console.log(inp);
                 else {
                         alert("MISSING INPUT");
                 }
                 var sect2 = encodeURIComponent(inp);
-                window.location.href="thankyou.html?section2="+sect2;
-            }
-        </script>
+                
+                const fs = require('fs')
+              
 
-Message #general
+                // Write data in 'Output.txt' .
+                fs.writeFile('Output.txt', inp, (err) => {
+
+                    // In case of a error throw err.
+                    if (err) throw err;
+                })
+                window.location.href="thankyou.html?section2="+sect2;
+                    
+        }
+            
+        </script>
         
         
         </form>
