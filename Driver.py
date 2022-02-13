@@ -15,7 +15,7 @@
 import flask
 import google.auth
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 _, PROJECT_ID = google.auth.default()
 PARENT = 'projects/{}'.format(PROJECT_ID)
 
@@ -55,7 +55,7 @@ def survey():
 
 
 if __name__ == '__main__':
-    app.run(debug=False, threaded=True, host="localhost", port=8080)
+    app.run(debug=False, threaded=True, host="34.67.214.172", port=8080)
     #import os
     #app.run(debug=True, threaded=True, host='0.0.0.0',
             #port=int(os.environ.get('PORT', 8080)))
