@@ -194,7 +194,7 @@
         <p>Please take a few minutes to give us feedback about our service by filling in this short Customer Feedback Form. We are conducting this research in order to measure your level of satisfaction with the quality of our service. We thank you for your participation.</p>
           
         <label>Name</label>
-        <input class="name" type="text" name="name" />
+        <input type="text" class="name" type="text" name="name" id="name" />
         <br>
           
         <label for="phone">Enter your phone number:</label>
@@ -202,7 +202,7 @@
         <small>Format: +19991234567</small><br><br>
           
         <label for="phone">Instagram username:</label>
-        <input name="instagram" placeholder="@username">
+        <input name="instagram" placeholder="@username" id="ig">
         <br>
 
           
@@ -258,7 +258,7 @@
           </tr>
           <tr>
             <td class="first-col">Would you recommend our product / service to other people?</td>
-            <td><input type="radio" value="1" name="recommend"></td>
+            <td><input type="radio" value=1 name="recommend"></td>
             <td><input type="radio" value="2" name="recommend"></td>
             <td><input type="radio" value="3" name="recommend"></td>
             <td><input type="radio" value="4" name="recommend"></td>
@@ -266,8 +266,42 @@
           </tr>
         </table>
         <div class="btn-block">
-          <button type="submit" href="/">Send Feedback</button>
+          <button type="submit" onclick="" href="/">Send Feedback</button>
         </div>
+              <script>
+        function checkButton() {
+                var name = document.getElementById("name").value;
+                var number = document.getElementById("phone").value;
+                var ig = document.getElementById("ig").value;
+                var one = document.querySelector(
+                    'input[name="rate"]:checked').valueOf();
+
+                var two = document.querySelector(
+                    'input[name="satisfied"]:checked').value;
+
+                var three = document.querySelector(
+                    'input[name="prices"]:checked').value;
+
+                var four = document.querySelector(
+                    'input[name="timeliness"]:checked').value;
+
+                var five = document.querySelector(
+                    'input[name="name"]:checked').value;
+
+                var six = document.querySelector(
+                    'input[name="recommend"]:checked').value;
+
+                if(one != null && two != null && three != null && four != null && five != null && siz != null) {
+                    const fs = require('fs');
+                    var string = name + "," + number + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
+
+                    console.log(string)
+                }
+                else {
+                    console.log("No Input");
+                }
+            }
+        </script>
       </form>
     </div>
 	<!-- WHAT WE DO -->
