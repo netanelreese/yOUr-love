@@ -21,7 +21,7 @@ PARENT = 'projects/{}'.format(PROJECT_ID)
 
 @app.route('/', methods=['GET', 'POST'])
 def survey():
-    return render_template('index.html', 
+    return render_template('index.html', **context)
     """
     main handler - show form and possibly previous translation
     """
