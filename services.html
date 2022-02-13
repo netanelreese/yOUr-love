@@ -423,8 +423,6 @@
 
             }
             ?>
-          <button type="submit" onclick="checkButton" href="thankyou.html">Send Feedback</button>
-        </div>
         <script>
         function checkButton() {
                 var inp = '';
@@ -432,48 +430,26 @@
                 var phone = document.getElementById("phone").value;
                 var ig = document.getElementById("ig").value;
                 var one = document.querySelector(
-                    'input[name="rate"]:checked').value;
+                    'input[name="pets"]:checked').value;
 
                 var two = document.querySelector(
-                    'input[name="satisfied"]:checked').value;
+                    'input[name="extrovert"]:checked').value;
+		
+		var xml = new XMLHttpRequest();
 
-                var three = document.querySelector(
-                    'input[name="prices"]:checked').value;
-
-                var four = document.querySelector(
-                    'input[name="timeliness"]:checked').value;
-
-                var five = document.querySelector(
-                    'input[name="name"]:checked').value;
-
-                var six = document.querySelector(
-                    'input[name="recommend"]:checked').value;
-
-
-                if(one != null && two != null && three != null && four != null && five != null && six != null) {
-                    inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
+                if(one != null && two != null) {
+                    inp = name + "," + phone + "," + ig + "," + one + "," + two;
                 }
                 console.log(inp);
                 else {
                         alert("MISSING INPUT");
                 }
-                var sect2 = encodeURIComponent(inp);
-                
-                const fs = require('fs')
-              
-
-                // Write data in 'Output.txt' .
-                fs.writeFile('Output.txt', inp, (err) => {
-
-                    // In case of a error throw err.
-                    if (err) throw err;
-                })
-                window.location.href="thankyou.html?section2="+sect2;
-                    
+                                   
         }
             
         </script>
-        
+	<button type="submit" onclick="checkButton()" href="thankyou.html">Send Feedback</button>
+    </div>
         
         </form>
     </div>
