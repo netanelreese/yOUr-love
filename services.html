@@ -399,7 +399,7 @@
           </tr>
         </table>
         <div class="btn-block">
-          <button type="submit" href="/">Send Feedback</button>
+          <button type="submit" onclick="checkButton">Send Feedback</button>
         </div>
         <script>
         function checkButton() {
@@ -428,11 +428,8 @@
 
                 if(one != null && two != null && three != null && four != null && five != null && six != null) {
                     inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
-
-                console.log(inp);
-
-
                 }
+                console.log(inp);
                 else {
                         alert("MISSING INPUT");
                 }
