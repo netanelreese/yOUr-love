@@ -435,12 +435,12 @@
                 var two = document.querySelector(
                     'input[name="extrovert"]:checked').value;
 		
-		var xml = new XMLHttpRequest();
+		        var xml = new XMLHttpRequest();
 
                 if(one != null && two != null) {
                     inp = name + "," + phone + "," + ig + "," + one + "," + two;
+                    console.log(inp);
                 }
-                console.log(inp);
                 else {
                         alert("MISSING INPUT");
                 }
