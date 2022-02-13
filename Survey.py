@@ -6,7 +6,7 @@ user_db = mysql.connector.connect(
   host="localhost",
   user="root",
   password="password",
-  database="your_love"
+  database="user_data"
 )
 
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
