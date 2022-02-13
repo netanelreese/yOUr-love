@@ -3,9 +3,9 @@ import toml
 import mysql.connector
 
 user_db = mysql.connector.connect(
-  host="34.122.13.220",
+  host="localhost",
   user="root",
-  password="Violentwinds212!",
+  password="pw",
   database="your_love"
 )
 
