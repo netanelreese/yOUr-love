@@ -64,8 +64,8 @@ def get_matches():
         for user2 in user_data:
             if user1 != user2:
                 num_same = num_same_answers(user1, user2)
-                if num_same > matches[2][1]:
-                    matches[2] = [get_name(user2), num_same, get_insta(user2)]
+                if num_same > matches[0][1]:
+                    matches[0] = [get_name(user2), num_same, get_insta(user2)]
                     sort(matches)
         send_matches(matches_text(matches), get_phone_number(user1))
 
@@ -78,7 +78,7 @@ def num_same_answers(answers1, answers2):
         if (answer1 == answer2):
             num_same += 1
         i += 1
-    return num_same / 20.0
+    return 100 * num_same / 20.0
 
 #phone_num = get_phone_number()
 
