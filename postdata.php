@@ -1,7 +1,7 @@
 <?php
 $q = $_GET['q'];
 
-echo "$name"
+echo "hmm"
 
 $Name = "Username:".$_POST['name']."
     ";
