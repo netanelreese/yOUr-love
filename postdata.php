@@ -9,6 +9,10 @@ if (!$con) {
   die('Could not connect: ' . mysqli_error($con));
 }
 
+$sql="SELECT * FROM user WHERE id = '".$q."'";
+$result = mysqli_query($con,$sql);
+
+
 echo "<script>console.log("Logged in")<script\>"
 //     fwrite($file, $Name);
 //     fwrite($file, $Phone);
