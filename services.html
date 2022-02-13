@@ -9,9 +9,6 @@
 	<meta name="author" content="Tanislav Robert">
 	<meta name="description" content="KARMO is a creative and modern template for digital agencies">
 
-	//<?php include 'postdata.php';?>
-
-
 	<!-- STYLES -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/flexslider.css">
@@ -35,7 +32,6 @@
       font-family: "Cantarell", "Times New Roman", sans-serif;
       text-align: center;
       font-size: 14px;
-      line-height: 22px;
      }
       body, div, form, input, p { 
       padding: 0;
@@ -47,16 +43,15 @@
       line-height: 22px;
       }
       h1 {
-      font-weight: 400;
+      font-weight: 500;
       color: #000;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       text-align: center;
-      font-size: 40px;
+      font-size: 44px;
       }
       h4 {
       margin: 15px 0 4px;
       }
-<<<<<<< HEAD
       h5 {
       color: #444;
       font-family: "Cantarell", "Times New Roman", sans-serif;
@@ -68,8 +63,6 @@
       max-width: 1000px;
       height: auto;
       }
-=======
->>>>>>> 624ce39c4f8021e721c711d868c0271815659a96
       div.testbox {
       display: flex;
       justify-content: center;
@@ -81,8 +74,6 @@
       color: #000;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 22px;
-      overflow-wrap: normal;
-      word-break: normal;
       }
       form {
       width: 100%;
@@ -121,7 +112,6 @@
       color: #3b3b3b;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 15px;
-      overflow-wrap: normal;
       word-break: normal;
       font-weight: 33px;
       }
@@ -129,7 +119,7 @@
       color: #3b3b3b;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 15px;
-      overflow-wrap: normal;"
+      overflow-wrap: normal;
       }
       table {
       width: 100%;
@@ -148,7 +138,7 @@
       -webkit-border-radius: 5px; 
       -moz-border-radius: 5px; 
       border-radius: 5px; 
-      background-color: #095484;
+      background-color: #bd4e46;
       font-size: 16px;
       color: #fff;
       cursor: pointer;
@@ -162,6 +152,12 @@
       word-break: keep-all;
       }
       }
+     .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
 </style>
 <body class="animsition">
 	<!-- Border -->
@@ -223,24 +219,23 @@
                 <b style="margin-left: 100px"></b>
             </span>
 			<h1><span style="color: #ffffff;   font-weight: 700; font-size: 50px;">OUR TEST</span></h1>
-             <p class="font-weight-bold; text-xl-left;"><p><h1><span style="color: #ffffff; font-weight: 700; font-size: 67px;">y</span><span style="color: #dc143c; font-weight: 700; font-size: 67px;">OU</span><span style="color: #ffffff; font-weight: 700; font-size: 67px;">r love</span></h1></p></p>
+             <p class="font-weight-bold; text-xl-left;"><p><h1><span style="color: #ffffff; font-weight: 700; font-size: 67px;">y</span><span style="color: #dc143c; font-weight: 700; font-size: 67px;">OU</span><span style="color: #ffffff; font-weight: 700; font-size: 67px;">r love</span></h1>
 		</div>
 	</div>
     <div class="testbox">
-      <form method="post" action="test.php">
+      <form action="/file.php" method="post" target="_blank">
         <h1>yOUr Love Test</h1>
-        <p>Please take a few minutes to give us feedback about our service by filling in this short Customer Feedback Form. We are conducting this research in order to measure your level of satisfaction with the quality of our service. We thank you for your participation.</p>
+        <p style="text-align: center;">Please take a few minutes to complete the test in order to find yOUr potential soulmate ;)</p>
           
-        <label>Name</label>
-        <input class="name" type="text" name="name" id="name" />
-        <br>
+        <h5>Name</h5>
+        <input style = "width: 400px;" class="name" type="text" name="name" />
           
-        <label for="phone">Enter your phone number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+19991234567" pattern="+1[0-9]{3}[0-9]{3}[0-9]{4}" required>
-        <small>Format: +19991234567</small><br><br>
+        <h5 for="phone">Enter your phone number:</h5>
+        <input style = "width: 400px;" type="tel" id="phone" name="phone" ><br>
+        <small>Format: +19991234567</small><br>
           
-        <label for="phone">Instagram username:</label>
-        <input name="instagram" placeholder="@username" id="ig">
+        <h5 for="username">Instagram username:</h5>
+        <input style = "width: 400px;" name="ig" placeholder="@username">
         <br>
 
           
@@ -270,7 +265,6 @@
             <td><input type="radio" value=4 name="extrovert" /></td>
             <td><input type="radio" value=5 name="extrovert" /></td>
           </tr>
-<!--
           <tr>
             <td class="first-col">Spends free time going out</td>
             <td><input type="radio" value=1 name="out" /></td>
@@ -345,59 +339,59 @@
           </tr>
             <tr>
             <td class="first-col">Tends to be lazy</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="lazy" /></td>
+            <td><input type="radio" value=2 name="lazy" /></td>
+            <td><input type="radio" value=3 name="lazy" /></td>
+            <td><input type="radio" value=4 name="lazy" /></td>
+            <td><input type="radio" value=5 name="lazy" /></td>
           </tr>
             <tr>
             <td class="first-col">Is helpful and unselfish with others</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="help" /></td>
+            <td><input type="radio" value=2 name="help" /></td>
+            <td><input type="radio" value=3 name="help" /></td>
+            <td><input type="radio" value=4 name="help" /></td>
+            <td><input type="radio" value=5 name="help" /></td>
           </tr>
             <tr>
             <td class="first-col">Can be cold and aloof</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="cold" /></td>
+            <td><input type="radio" value=2 name="cold" /></td>
+            <td><input type="radio" value=3 name="cold" /></td>
+            <td><input type="radio" value=4 name="cold" /></td>
+            <td><input type="radio" value=5 name="cold" /></td>
           </tr>
             <tr>
             <td class="first-col">A picnic is the ideal first date to me</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="date" /></td>
+            <td><input type="radio" value=2 name="date" /></td>
+            <td><input type="radio" value=3 name="date" /></td>
+            <td><input type="radio" value=4 name="date" /></td>
+            <td><input type="radio" value=5 name="date" /></td>
           </tr>
             <tr>
             <td class="first-col">Snapchat is my preferred form of communication</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="snap" /></td>
+            <td><input type="radio" value=2 name="snap" /></td>
+            <td><input type="radio" value=3 name="snap" /></td>
+            <td><input type="radio" value=4 name="snap" /></td>
+            <td><input type="radio" value=5 name="snap" /></td>
             </tr>
             <tr>
             <td class="first-col">Is talkative</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="talk" /></td>
+            <td><input type="radio" value=2 name="talk" /></td>
+            <td><input type="radio" value=3 name="talk" /></td>
+            <td><input type="radio" value=4 name="talk" /></td>
+            <td><input type="radio" value=5 name="talk" /></td>
           </tr>
             <tr>
             <td class="first-col">Can be sentimental at times</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="time" /></td>
+            <td><input type="radio" value=2 name="time" /></td>
+            <td><input type="radio" value=3 name="time" /></td>
+            <td><input type="radio" value=4 name="time" /></td>
+            <td><input type="radio" value=5 name="time" /></td>
           </tr>
             <tr>
             <td class="first-col">A hotdog is a sandwich</td>
@@ -409,71 +403,18 @@
           </tr>
             <tr>
             <td class="first-col">Greatest fear is being alone</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="fear" /></td>
+            <td><input type="radio" value=2 name="fear" /></td>
+            <td><input type="radio" value=3 name="fear" /></td>
+            <td><input type="radio" value=4 name="fear" /></td>
+            <td><input type="radio" value=5 name="fear" /></td>
           </tr>
--->
         </table>
         <div class="btn-block">
-            <?php
-            if(isset($_POST['submit'])){
-                $Name = "Username:".$_POST['name']."
-                ";
-                $Phone = "Phone:".$_POST['phone']."
-                ";
-                $ig = "IG:".$_POST['ig']."
-                ";
-                $One = "One:".$_POST['one']."
-                ";
-                $Two = "Two:".$_POST['two']."
-                ";
-                $file=fopen("saved.txt", "a");
-                fwrite($file, $Name);
-                fwrite($file, $Phone);
-                fwrite($file, $IG);
-                fwrite($file, $One);
-                fwrite($file, $Two);
-                fclose($file);
-
-            }
-            ?>
-
-        <script>
-        function checkButton() {
-                var inp = '';
-                var name = document.getElementById("name").value;
-                var phone = document.getElementById("phone").value;
-                var ig = document.getElementById("ig").value;
-                var one = document.querySelector(
-                    'input[name="pets"]:checked').value;
-
-                var two = document.querySelector(
-                    'input[name="extrovert"]:checked').value;
-		
-		        var xml = new XMLHttpRequest();
-
-                if(one != null && two != null) {
-                    inp = name + "," + phone + "," + ig + "," + one + "," + two;
-
-                    xml.open("POST", "postdata.php?q="+inp, true);
-                    xml.send();
-
-                    console.log(inp);
-                }
-                else {
-                        alert("MISSING INPUT");
-                }
-                                   
-        }
-            
-        </script>
-	<button type="submit"  href="thankyou.html">Send Feedback</button>
-    </div>
-        
+          <button type="submit">Send Feedback</button>
+        </div>
         </form>
+
     </div>
 	<!-- WHAT WE DO -->
 	<section class="about_descr mt-100">
@@ -482,52 +423,18 @@
 				<div class="col-md-8 col-md-offset-2 col-sm-12">
 					<div class="section-title">
 						<h2 class="mb-50">THANK YOU!</h2>
-						<p class="module-subtitle">Latest project we have made. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class="module-subtitle">Hopefully you find a wonderful match! In the meantime have a look at our wonderful member, a single, absolute 6'2" menance human being, Nathanael Reese! @nathaneal__reese  </p>
 					</div>
 				</div>
 			</div>
-
-			<div class="row mt-100">
-				<div class="col-md-6 wow fadeInUp">
-					<p style="margin-bottom:30px">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-						there live the blind texts, nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur..
-					</p>
-					<div class="col-md-6">
-						<div class="row">
-							<ul class="services-list">
-								<li>Stunning on all screens</li>
-								<li>Easy to customize</li>
-								<li>Make a difference</li>
-								<li>Imagine and create</li>
-								<li>Unlimited possibilities</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="row">
-							<ul class="services-list">
-								<li>Remarkable style</li>
-								<li>Captivating presentations</li>
-								<li>Make a difference</li>
-								<li>Make a difference</li>
-								<li>Imagine and create</li>
-							</ul>
-						</div>
-					</div>
+                <div class="container">
+			<div class="row center">
+				<div class="col-md-8 col-md-offset-2">
+					<img src="assets/img/ntcheese.jpg" alt="Khaki HTML Template" width="300">
 				</div>
+			</div><!-- description text -->
+		</div>
 
-				<div class="col-md-6 wow fadeInUp" data-wow-delay=".1s">
-					<img   src="assets/img/services_desc.jpg" alt="img" style="width:100%" class="responsive">
-				</div>
 			</div><!-- end row -->
 		</div><!-- end container -->
 	</section>
@@ -543,37 +450,36 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="footer-widget contact-widget">
                             <img src="assets/img/footerlogo.png" class="logo-footer img-responsive" alt="Footer Logo" />
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                             <ul class="social-icons">
                                 <li>
-                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a class="facebook" href="maintenance.html"><i class="fa fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a class="twitter" href="maintenance.html"><i class="fa fa-twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a class="google" href="maintenance.html"><i class="fa fa-google-plus"></i></a>
                                 </li>
                                 <li>
-                                    <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a class="dribbble" href="maintenance.html"><i class="fa fa-dribbble"></i></a>
                                 </li>
                                 <li>
-                                    <a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a class="linkdin" href="maintenance.html"><i class="fa fa-linkedin"></i></a>
                                 </li>
                                 <li>
-                                    <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+                                    <a class="flickr" href="maintenance.html"><i class="fa fa-flickr"></i></a>
                                 </li>
                                 <li>
-                                    <a class="tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+                                    <a class="tumblr" href="maintenance.html"><i class="fa fa-tumblr"></i></a>
                                 </li>
                                 <li>
-                                    <a class="instgram" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="instgram" href="https://www.instagram.com/nathanael__reese/"><i class="fa fa-instagram"></i></a>
                                 </li>
                                 <li>
-                                    <a class="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
+                                    <a class="vimeo" href="maintenance.html"><i class="fa fa-vimeo-square"></i></a>
                                 </li>
                                 <li>
-                                    <a class="skype" href="#"><i class="fa fa-skype"></i></a>
+                                    <a class="skype" href="maintenance.html"><i class="fa fa-skype"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -583,9 +489,8 @@
                     <!-- Start Twitter Widget -->
                     <div class="col-md-3 col-xs-12">
                         <div class="footer-widget twitter-widget">
-                            <h4>Twitter</h4>
-														Email: somecompany@example.com <br>
-														Phone: +1 234 567 89 10
+														Email: reesenate@gmail.com Email me I am free on the 14th and single <br>
+														Phone: +19185213551 Hello My name is Nick, I am 6'3" and single
                         </div>
                     </div><!-- .col-md-3 -->
                     <!-- End Twitter Widget -->
@@ -595,11 +500,11 @@
                         <div class="footer-widget company-links">
                             <h4>Company</h4>
 							<ul class="footer-links">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Our Products</a></li>
-								<li><a href="#">Our Culture</a></li>
-								<li><a href="#">Team</a></li>
+								<li><a href="maintenance.html">About</a></li>
+								<li><a href="maintenance.html">Services</a></li>
+								<li><a href="maintenance.html">Our Products</a></li>
+								<li><a href="maintenance.html">Our Culture</a></li>
+								<li><a href="maintenance.html">Team</a></li>
 							</ul>
                         </div>
                     </div><!-- .col-md-3 -->
