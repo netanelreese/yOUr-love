@@ -15,11 +15,11 @@ user_db = mysql.connector.connect(
 print("here")
 
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
-config = toml.load("config.toml")
-tokendic = config.get("Twillio")
-auth_token = tokendic.get("key")
+#config = toml.load("config.toml")
+#tokendic = config.get("Twillio")
+#auth_token = tokendic.get("key")
 
-client = Client(account_sid, auth_token)
+#client = Client(account_sid, auth_token)
 
 cursorObject = user_db.cursor()
 
