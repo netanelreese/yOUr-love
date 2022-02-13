@@ -50,7 +50,7 @@ def sort(arr):
     if arr[1][1]>arr[0][1]:
         temp = arr[1]
         arr[1] = arr[0]
-        arr[1] = temp
+        arr[0] = temp
 
 
 # TODO
