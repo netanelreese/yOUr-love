@@ -1,7 +1,7 @@
 <?php
 $q = $_GET['q'];
 
-echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+echo "$q";
 
 $Name = "Username:".$_POST['name']."
     ";
@@ -13,11 +13,12 @@ $Name = "Username:".$_POST['name']."
     ";
     $Two = "Two:".$_POST['two']."
     ";
-    $file=fopen("var/www/html/saved.txt", "w");
-    fwrite($file, $Name);
-    fwrite($file, $Phone);
-    fwrite($file, $IG);
-    fwrite($file, $One);
-    fwrite($file, $Two);
-    fclose($file);
+
+    $file=fopen("saved.txt", "w");
+//     fwrite($file, $Name);
+//     fwrite($file, $Phone);
+//     fwrite($file, $IG);
+//     fwrite($file, $One);
+//     fwrite($file, $Two);
+//     fclose($file);
 ?>
