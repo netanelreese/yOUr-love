@@ -1,7 +1,7 @@
 <?php
 $q = $_GET['q'];
 
-echo "hmm"
+<h1>echo "hmm"<h1/>
 
 $con = mysqli_connect('34.122.13.220','root','Violentwinds212!','your_love');
 
