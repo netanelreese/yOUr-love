@@ -1,4 +1,5 @@
 <?php
+echo "WOrk?";
 $Name = "Username:".$_POST['name']."
     ";
     $Phone = "Phone:".$_POST['phone']."
