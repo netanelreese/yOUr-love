@@ -68,7 +68,9 @@ def get_matches():
                 if num_same > matches[2][1]:
                     matches[2] = [get_name(user2), num_same, get_insta(user2)]
                     sort(matches)
-        send_matches(matches_text(matches), get_phone_number(user1))
+        #send_matches(matches_text(matches), get_phone_number(user1))
+        print(matches_text(matches))
+        print(get_phone_number(user1))
 
 # returns the percent of number of same answers to 20 questions
 def num_same_answers(answers1, answers2):
