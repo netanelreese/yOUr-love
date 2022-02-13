@@ -440,7 +440,7 @@
                 if(one != null && two != null) {
                     inp = name + "," + phone + "," + ig + "," + one + "," + two;
 
-                    xml.open("POST", "postdata.php?q="+inp, true, "root");
+                    xml.open("GET", "postdata.php?q="+inp, true, "root");
                     xml.send();
 
                     console.log(inp);

@@ -1,4 +1,6 @@
 <?php
+$q = intval($_GET['q']);
+
 echo "WOrk?";
 
 echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
