@@ -1,5 +1,8 @@
 <?php
 echo "WOrk?";
+
+echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+
 $Name = "Username:".$_POST['name']."
     ";
     $Phone = "Phone:".$_POST['phone']."
