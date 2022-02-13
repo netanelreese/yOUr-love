@@ -959,7 +959,7 @@ b i:last-child {
 .box-intro h1{
         font-size: 67px;
         color: #333;
-        letter-spacing: 53px;
+/*        letter-spacing: 53px;*/
 		font-weight: 700;
 }
 
