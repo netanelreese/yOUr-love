@@ -16,12 +16,115 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
-
+<style>
+     html, body {
+      min-height: 100%;
+      }
+     label {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+     }
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      font-weight: 400;
+      }
+      h4 {
+      margin: 15px 0 4px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle;
+      }
+      .name {
+      display: block;
+      width: 45%;
+      }
+      input:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      th, td {
+      width: 15%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      text-align: left;
+      }
+      table {
+      width: 100%;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #0666a3;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      }
+</style>
 <body class="animsition">
 	<!-- Border -->
 	<span class="frame-line top-frame visible-lg"></span>
@@ -65,14 +168,109 @@
 		</div>
 	</header>
 	<!-- HERO SECTION  -->
+<!--
+    <section class="box-intro bg-film">
+        <div class="section-overlay">
+		<div class="page-title">
+			<h1 style="padding-top: 40px"><span style="color: #ffffff; font-weight: 400; font-size: 67px;">OUR TEST</span></h1>
+             <p class="font-weight-bold; text-xl-left;"><p class="font-weight-bold;"><h1><span style="color: #ffffff;">y</span><span style="color: #dc143c;">OU</span><span style="color: #ffffff;">r love</span></h1></p></p>
+		</div>
+    </section>
+-->
 	<div class="site-hero_2">
 		<div class="section-overlay"></div>
-		<div class="page-title">
-			<h2>our Test</h2>
-			<div class="small-title">home / services / </div>
+		<div class="page-title" style="padding-top:40px">
+            <span class="box-words-wrapper">
+                <b class="is-visible"  style="margin-left: 29px"></b>
+                <b style="margin-left: 100px"></b>
+            </span>
+			<h1><span style="color: #ffffff;   font-weight: 700; font-size: 50px;">OUR TEST</span></h1>
+             <p class="font-weight-bold; text-xl-left;"><p><h1><span style="color: #ffffff; font-weight: 700; font-size: 67px;">y</span><span style="color: #dc143c; font-weight: 700; font-size: 67px;">OU</span><span style="color: #ffffff; font-weight: 700; font-size: 67px;">r love</span></h1></p></p>
 		</div>
 	</div>
+    <div class="testbox">
+      <form action="/">
+        <h1>Customer Feedback Form</h1>
+        <p>Please take a few minutes to give us feedback about our service by filling in this short Customer Feedback Form. We are conducting this research in order to measure your level of satisfaction with the quality of our service. We thank you for your participation.</p>
+          
+        <label>Name</label>
+        <input class="name" type="text" name="name" />
+        <br>
+          
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+19991234567" pattern="+1[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        <small>Format: +19991234567</small><br><br>
+          
+        <label for="phone">Instagram username:</label>
+        <input name="instagram" placeholder="@username">
+        <br>
 
+          
+        <hr />
+        <h3>Overall experience with our service</h3>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>Very Good</th>
+            <th>Good</th>
+            <th>Fair</th>
+            <th>Poor</th>
+            <th>Very Poor</th>
+          </tr>
+          <tr>
+            <td class="first-col">How would you rate your overall experience with our service?</td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+            <td><input type="radio" value="none" name="rate" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">How satisfied are you with the comprehensiveness of our offer?</td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+            <td><input type="radio" value="none" name="satisfied" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">How would you rate our prices?</td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+            <td><input type="radio" value="none" name="prices" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">How satisfied are you with the timeliness of order delivery?</td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+            <td><input type="radio" value="none" name="timeliness" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">How satisfied are you with the customer support?</td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+            <td><input type="radio" value="none" name="name" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Would you recommend our product / service to other people?</td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+            <td><input type="radio" value="none" name="recommend" /></td>
+          </tr>
+        </table>
+        <div class="btn-block">
+          <button type="submit" href="/">Send Feedback</button>
+        </div>
+      </form>
+    </div>
 	<!-- WHAT WE DO -->
 	<section class="about_descr mt-100">
 		<div class="container">
@@ -128,249 +326,6 @@
 				</div>
 			</div><!-- end row -->
 		</div><!-- end container -->
-	</section>
-
-	<!-- CLIENTS -->
-	<div id="clients" class="clients mt-100 mbr-box mbr-section mbr-section--relative">
-		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-			<path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
-		</svg>
-		<div class="container">
-			<div class="row">
-						<div class="col-md-12">
-						</div>
-						<div id="owl-demo">
-								<div class="item"><img src="assets/img/clients/1.png" alt="Owl Image"></div>
-								<div class="item"><img src="assets/img/clients/2.png" alt="Owl Image"></div>
-								<div class="item"><img src="assets/img/clients/3.png" alt="Owl Image"></div>
-								<div class="item"><img src="assets/img/clients/1.png" alt="Owl Image"></div>
-								<div class="item"><img src="assets/img/clients/2.png" alt="Owl Image"></div>
-								<div class="item"><img src="assets/img/clients/3.png" alt="Owl Image"></div>
-						</div>
-				</div>
-		</div>
-	</div>
-
-	<!-- Testimonials -->
-	<section id="testimonials" class="testimonials mb-100 mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted mbr-parallax-background" style="background-image: url(assets/img/testimonials.jpg);">
-				<div class="container">
-					<div class="row">
-								<div class="col-md-12">
-										<div class="flexslider">
-												<ul class="slides">
-														<li>
-																<div class="avatar"><img src="assets/img/testimonial1.jpg" alt="Sedna Testimonial Avatar"></div>
-																<h5>"Lorem ipsum dolor sit amet, nullam lucia nisi."</h5>
-																<p class="author">Tanislav Robert, Product Designer.</p>
-														</li>
-														<li>
-																<div class="avatar"><img src="assets/img/testimonial2.jpg" alt="Sedna Testimonial Avatar"></div>
-																<h5>"Nunc vel maximus purus. Nullam ac urna ornare."</h5>
-																<p class="author">Tanislav Alexandru, Founder @ WocTech.</p>
-														</li>
-														<li>
-																<div class="avatar"><img src="assets/img/testimonial3.jpg" alt="Sedna Testimonial Avatar"></div>
-																<h5>"Nullam ac urna ornare, ultrices nisl ut, lacinia nisi."</h5>
-																<p class="author">Calota Oana, Pixel Guru</p>
-														</li>
-												</ul>
-										</div>
-								</div>
-						</div>
-				</div>
-	</section>
-
-	<section class="mb-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-heart-pulse"></i>
-						<h6>keep pulse going</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".1s">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-rocket"></i>
-						<h6>unlimited options</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-diamond"></i>
-						<h6>great ideas</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".3s">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-mustache"></i>
-						<h6>awesome support</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-magic-wand"></i>
-						<h6>we do magic</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".1s">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-cart"></i>
-						<h6>best price</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-clock"></i>
-						<h6>don't wait</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".3s">
-					<div class="benefits_1_single mb-50">
-						<i class="lnr lnr-smile"></i>
-						<h6>happy peoples</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- PRICING -->
-	<section id="pricing" class="srv_pricing mbr-box mbr-section mbr-section--relative mbr-section--full-height mbr-section--bg-adapted ">
-		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-			<path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
-		</svg>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 col-sm-12">
-					<div class="row center">
-						<div class="section-title mt-100 mb-100">
-							<h2 class="mb-50">we have best prices</h2>
-							<p class="module-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row center">
-				<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div class="pricing_plan">
-						<div class="plan_title"><h6>Basic</h6></div>
-						<div class="plan_price">
-							<i class="fa fa-usd" aria-hidden="true"></i>
-                            <div class="numscroller" data-slno='1' data-min='0' data-max='29' data-delay='20' data-increment="5">29</div>
-                        </div>
-						<ul class="list">
-							<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-							<li><strong>Three</strong>year support & updates</li>
-						</ul>
-						<a href="blog-inner.html" class="default-btn"> See More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div class="pricing_plan">
-						<div class="plan_title"><h6>Standard</h6></div>
-						<div class="plan_price">
-							<i class="fa fa-usd" aria-hidden="true"></i>
-                            <div class="numscroller" data-slno='1' data-min='0' data-max='79' data-delay='15' data-increment="5">79</div>
-                        </div>
-						<ul class="list">
-							<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-							<li><strong>Two</strong>year support & updates</li>
-						</ul>
-						<a href="blog-inner.html" class="default-btn"> See More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div class="pricing_plan">
-						<div class="plan_title"><h6>Advanced</h6></div>
-						<div class="plan_price">
-							<i class="fa fa-usd" aria-hidden="true"></i>
-                            <div class="numscroller" data-slno='1' data-min='0' data-max='199' data-delay='13' data-increment="5">199</div>
-                        </div>
-						<ul class="list">
-							<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-							<li><strong>Three</strong>year support & updates</li>
-						</ul>
-						<a href="blog-inner.html" class="default-btn"> See More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Contact -->
-	<section id="contact" class="contact mbr-box mbr-section mbr-section--relative mbr-section--bg-adapted">
-		<div class="container">
-			<div class="col-md-6 col-sm-12">
-				<div class="row">
-					<h4> let's work together</h4>
-						<p class="libre-text mt-50">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.
-						</p>
-
-					<a href="#" class="default-btn"> Get in touch <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-				</div>
-			</div>
-
-			<!-- Subscribe block -->
-			<div class=" col-md-offset-1 col-md-5 col-sm-12">
-				<div class="row center">
-					<div class="newsletter">
-						<h4>SUBSCRIBE</h4>
-						<p class="libre-text mb-50">
-							Stay informed with our newsletter
-						</p>
-						<form action="#" method="post">
-							<div class="input_1">
-								<input type="text" name="email">
-								<span>Enter your email adress</span>
-							</div>
-							<button id="submit_btn" class="default-btn"> Send <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 
 	<!-- Footer -->
