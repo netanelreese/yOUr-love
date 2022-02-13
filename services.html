@@ -266,15 +266,16 @@
           </tr>
         </table>
         <div class="btn-block">
-          <button type="submit" onclick="" href="/">Send Feedback</button>
+          <button type="submit" onclick="checkButton()" href="\">Send Feedback</button>
         </div>
               <script>
         function checkButton() {
+		console.log("penis");
                 var name = document.getElementById("name").value;
-                var number = document.getElementById("phone").value;
+                var phone = document.getElementById("phone").value;
                 var ig = document.getElementById("ig").value;
                 var one = document.querySelector(
-                    'input[name="rate"]:checked').valueOf();
+                    'input[name="rate"]:checked').value;
 
                 var two = document.querySelector(
                     'input[name="satisfied"]:checked').value;
@@ -291,15 +292,18 @@
                 var six = document.querySelector(
                     'input[name="recommend"]:checked').value;
 
-                if(one != null && two != null && three != null && four != null && five != null && siz != null) {
-                    const fs = require('fs');
-                    var string = name + "," + number + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
 
-                    console.log(string)
+                if(one != null && two != null && three != null && four != null && five != null && six != null) {
+                    var inp = name + "," + phone + "," + ig + "," + one + "," + two + "," + three + "," + four + "," + five + "," + six;
+
+		console.log(inp);
+
+
                 }
-                else {
-                    console.log("No Input");
-                }
+		else {
+			alert("MISSING INPUT");
+		}
+
             }
         </script>
       </form>
