@@ -32,7 +32,6 @@
       font-family: "Cantarell", "Times New Roman", sans-serif;
       text-align: center;
       font-size: 14px;
-      line-height: 22px;
      }
       body, div, form, input, p { 
       padding: 0;
@@ -44,14 +43,20 @@
       line-height: 22px;
       }
       h1 {
-      font-weight: 400;
+      font-weight: 500;
       color: #000;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       text-align: center;
-      font-size: 40px;
+      font-size: 44px;
       }
       h4 {
       margin: 15px 0 4px;
+      }
+      h5 {
+      color: #444;
+      font-family: "Cantarell", "Times New Roman", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
       }
       div.testbox {
       display: flex;
@@ -64,8 +69,6 @@
       color: #000;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 22px;
-      overflow-wrap: normal;
-      word-break: normal;
       }
       form {
       width: 100%;
@@ -105,14 +108,13 @@
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 15px;
       overflow-wrap: normal;
-      word-break: normal;
-      font-weight: 
+      font-weight: 33px;
       }
       .sentiment {
       color: #3b3b3b;
       font-family: "Cantarell", "Times New Roman", sans-serif;
       font-size: 15px;
-      overflow-wrap: normal;"
+      overflow-wrap: normal;
       }
       table {
       width: 100%;
@@ -212,17 +214,16 @@
     <div class="testbox">
       <form action="/">
         <h1>yOUr Love Test</h1>
-        <p>Please take a few minutes to give us feedback about our service by filling in this short Customer Feedback Form. We are conducting this research in order to measure your level of satisfaction with the quality of our service. We thank you for your participation.</p>
+        <p style="text-align: center;">Please take a few minutes to complete the test in order to find yOUr potential soulmate ;)</p>
           
-        <label>Name</label>
+        <h5>Name</h5>
         <input class="name" type="text" name="name" />
-        <br>
           
-        <label for="phone">Enter your phone number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+19991234567" pattern="+1[0-9]{3}[0-9]{3}[0-9]{4}" required>
-        <small>Format: +19991234567</small><br><br>
+        <h5 for="phone">Enter your phone number:</h5>
+        <input type="tel" id="phone" name="phone" >
+        <small>Format: +19991234567</small><br>
           
-        <label for="phone">Instagram username:</label>
+        <h5 for="username">Instagram username:</h5>
         <input name="instagram" placeholder="@username">
         <br>
 
@@ -327,59 +328,59 @@
           </tr>
             <tr>
             <td class="first-col">Tends to be lazy</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="lazy" /></td>
+            <td><input type="radio" value=2 name="lazy" /></td>
+            <td><input type="radio" value=3 name="lazy" /></td>
+            <td><input type="radio" value=4 name="lazy" /></td>
+            <td><input type="radio" value=5 name="lazy" /></td>
           </tr>
             <tr>
             <td class="first-col">Is helpful and unselfish with others</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="help" /></td>
+            <td><input type="radio" value=2 name="help" /></td>
+            <td><input type="radio" value=3 name="help" /></td>
+            <td><input type="radio" value=4 name="help" /></td>
+            <td><input type="radio" value=5 name="help" /></td>
           </tr>
             <tr>
             <td class="first-col">Can be cold and aloof</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="cold" /></td>
+            <td><input type="radio" value=2 name="cold" /></td>
+            <td><input type="radio" value=3 name="cold" /></td>
+            <td><input type="radio" value=4 name="cold" /></td>
+            <td><input type="radio" value=5 name="cold" /></td>
           </tr>
             <tr>
             <td class="first-col">A picnic is the ideal first date to me</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="date" /></td>
+            <td><input type="radio" value=2 name="date" /></td>
+            <td><input type="radio" value=3 name="date" /></td>
+            <td><input type="radio" value=4 name="date" /></td>
+            <td><input type="radio" value=5 name="date" /></td>
           </tr>
             <tr>
             <td class="first-col">Snapchat is my preferred form of communication</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="snap" /></td>
+            <td><input type="radio" value=2 name="snap" /></td>
+            <td><input type="radio" value=3 name="snap" /></td>
+            <td><input type="radio" value=4 name="snap" /></td>
+            <td><input type="radio" value=5 name="snap" /></td>
             </tr>
             <tr>
             <td class="first-col">Is talkative</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="talk" /></td>
+            <td><input type="radio" value=2 name="talk" /></td>
+            <td><input type="radio" value=3 name="talk" /></td>
+            <td><input type="radio" value=4 name="talk" /></td>
+            <td><input type="radio" value=5 name="talk" /></td>
           </tr>
             <tr>
             <td class="first-col">Can be sentimental at times</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="time" /></td>
+            <td><input type="radio" value=2 name="time" /></td>
+            <td><input type="radio" value=3 name="time" /></td>
+            <td><input type="radio" value=4 name="time" /></td>
+            <td><input type="radio" value=5 name="time" /></td>
           </tr>
             <tr>
             <td class="first-col">A hotdog is a sandwich</td>
@@ -391,17 +392,18 @@
           </tr>
             <tr>
             <td class="first-col">Greatest fear is being alone</td>
-            <td><input type="radio" value=1 name="pets" /></td>
-            <td><input type="radio" value=2 name="pets" /></td>
-            <td><input type="radio" value=3 name="pets" /></td>
-            <td><input type="radio" value=4 name="pets" /></td>
-            <td><input type="radio" value=5 name="pets" /></td>
+            <td><input type="radio" value=1 name="fear" /></td>
+            <td><input type="radio" value=2 name="fear" /></td>
+            <td><input type="radio" value=3 name="fear" /></td>
+            <td><input type="radio" value=4 name="fear" /></td>
+            <td><input type="radio" value=5 name="fear" /></td>
           </tr>
         </table>
         <div class="btn-block">
           <button type="submit" href="/">Send Feedback</button>
         </div>
         <script>
+            
         function checkButton() {
                 var name = document.getElementById("name").value;
                 var phone = document.getElementById("phone").value;
