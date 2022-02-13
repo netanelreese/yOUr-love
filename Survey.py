@@ -89,4 +89,6 @@ def send_matches(text):
     )
     print(message.sid)
 
+user_db.close()
+
 get_table()
