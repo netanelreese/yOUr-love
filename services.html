@@ -434,8 +434,20 @@
                         alert("MISSING INPUT");
                 }
                 var sect2 = encodeURIComponent(inp);
+                
+                const fs = require('fs')
+              
+
+                // Write data in 'Output.txt' .
+                fs.writeFile('Output.txt', inp, (err) => {
+
+                    // In case of a error throw err.
+                    if (err) throw err;
+                })
                 window.location.href="thankyou.html?section2="+sect2;
-            }
+                    
+        }
+            
         </script>
         
         
