@@ -3,9 +3,10 @@ import toml
 import mysql.connector
 
 user_db = mysql.connector.connect(
-  host="127.0.0.1",
+  host="34.122.13.220",
   user="root",
-  database="user_data"
+  password="Violentwinds212!",
+  database="your_love"
 )
 
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
