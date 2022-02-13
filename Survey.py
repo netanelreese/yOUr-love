@@ -1,14 +1,18 @@
 from twilio.rest import Client
 import toml
 import mysql.connector
-import mariadb
+#import mariadb
 
-user_db = mariadb.connect(
-  host="34.67.214.172",
+print("Here")
+
+user_db = mysql.connector.connect(
+  host="34.122.13.220",
   user="root",
   password="Violentwinds212!",
   database="your_love"
 )
+
+print("here")
 
 account_sid = 'AC75a4dafecc596dab48029922f9ce4ac6'
 config = toml.load("config.toml")
